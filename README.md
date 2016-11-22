@@ -17,3 +17,13 @@ public class BarChartForm42 implements JRChartCustomizer{
 }
 ```
 การนำไปใช้ต้อง build ออกมาให้เป็นไฟล์  .jar 
+
+# รันใน ireport 
+	1. เข้าไปที่เมนู Tool->Options->classpath
+	2. กดปุ่ม  Add JAR
+	3. เลือกกราฟที่ต้องการปรับแก้ 
+	4. เลือก Properties -> Customize Class จากนั้น เอาชื่อ class มาใส่ เช่น com.ost.jasper.theme.BarChartForm42
+	
+# รันใน Jasper Server
+	1. เอาไฟล์ JAR ไปวางไว้ใน apache-tomcat-8.0.33\webapps\jasperserver\WEB-INF\lib
+	2. Restart jasperserver
