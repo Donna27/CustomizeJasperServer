@@ -13,7 +13,7 @@ public class BarChartForm42 implements JRChartCustomizer{
 		CategoryPlot categoryPlot = chart.getCategoryPlot();
         BarRenderer renderer = (BarRenderer) categoryPlot.getRenderer();
         //set Max bar width and remove Spaces between bars
-        renderer.setItemMargin(-0.2); //กำหนดระยะห่างของกราฟแท่ง ค่าติดลบจะทำให้กราฟแท่งเข้าหากัน
+        renderer.setItemMargin(-0.3); //กำหนดระยะห่างของกราฟแท่ง ค่าติดลบจะทำให้กราฟแท่งเข้าหากัน
         renderer.setMaximumBarWidth(0.1); // กำหนดขนาดของกราฟแท่งที่แสดงข้อมูล
 	}
 }
