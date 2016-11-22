@@ -1,6 +1,6 @@
 # Customize Report on Jasperserver
 การแก้ไขกราฟแท่ง
-- ศร้าง class แล้วทำการ implements JRChartCustomizer  แล้วจะได้ method ที่ override คือ customize(JFreeChart chart, JRChart jasperChart) สำหรับการแก้ไข กราฟ
+- สร้าง class แล้วทำการ implements JRChartCustomizer  แล้วจะได้ method ที่ override คือ customize(JFreeChart chart, JRChart jasperChart) สำหรับการแก้ไข กราฟ
 
 - Example
 ```
@@ -20,7 +20,7 @@ public class BarChartForm42 implements JRChartCustomizer{
 
 # รันใน ireport 
 	1. เข้าไปที่เมนู Tool->Options->classpath
-	2. กดปุ่ม  Add JAR
+	2. กดปุ่ม  Add JAR จากนั้นเลือก JAR ที่ต้องการเพิ่ม
 	3. เลือกกราฟที่ต้องการปรับแก้ 
 	4. เลือก Properties -> Customize Class จากนั้น เอาชื่อ class มาใส่ เช่น com.ost.jasper.theme.BarChartForm42
 	
