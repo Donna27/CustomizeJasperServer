@@ -3,6 +3,7 @@
 - ศร้าง class แล้วทำการ implements JRChartCustomizer  แล้วจะได้ method ที่ override คือ customize(JFreeChart chart, JRChart jasperChart) สำหรับการแก้ไข กราฟ
 
 - Example
+```
 package com.ost.jasper.theme;
 public class BarChartForm42 implements JRChartCustomizer{
 
@@ -14,4 +15,5 @@ public class BarChartForm42 implements JRChartCustomizer{
         renderer.setMaximumBarWidth(0.1); // กำหนดขนาดของกราฟแท่งที่แสดงข้อมูล
 	}
 }
+```
 การนำไปใช้ต้อง build ออกมาให้เป็นไฟล์  .jar 
